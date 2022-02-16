@@ -20,8 +20,6 @@ With an OCI tenancy operators gain access to a scalable infrastructure pool. A s
 
 Compartments reflect administrator domains in OCI and enable the separation of duties. The domain component adds a typical set of infrastructure resources, policies, guidelines and management services to each compartment. Domains can be customized in the link:https://www.terraform.io/docs/language/modules/syntax.html[module block] of the respective administrator template. 
 
-=== Recommendations
-
 ==== Service Configuration
 [#img-configuration] 
 .Service Configuration 
@@ -35,6 +33,11 @@ Platform components abstract provider specific APIs and contain code that can re
 
 Additional modules can be invoked referring to OCI modules in the link:https://registry.terraform.io/browse/modules?provider=oci[terraform registry], a great starting point with limited coding requirements are the link:https://registry.terraform.io/search/modules?q=oci%20cloud%20bricks[cloudbricks] components.  
 
+=== Recommendations
+
+=== Considerations
+
+=== Deployment
 ==== Resource Interfaces
 
 Modules deploy a variety of different resources, like infrastructure components, predefined cloud services, applications or third party software products. Usually we employ the terraform service provider to provision resources, however, command line scripts, API or SDK are additional options.
