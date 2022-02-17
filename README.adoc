@@ -13,8 +13,8 @@ The ocloud framework is a collection of provisioning scripts that acclerate the 
 With an OCI tenancy operators gain access to a scalable infrastructure pool. A service resident isolates a private partition and implements the policies for a new team of service operators. Using link:https://docs.oracle.com/en-us/iaas/Content/Identity/Tasks/managingcompartments.htm[compartments] operators separate the application space from shared domains like network and database management. 
 
 [#img-architecture] 
-.Base Architecture 
-image::https://raw.githubusercontent.com/ocilabs/images/main/base_architecture.drawio.png[Base Architecture]
+.Service Resident 
+image::https://raw.githubusercontent.com/ocilabs/images/main/service_resident.drawio.png[Service Resident]
 
 === Recommendations
 ==== Incremental steps
