@@ -43,10 +43,10 @@ Compartments reflect administrator domains in OCI and enable the separation of d
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/destinations.json[Routing Destinations]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routes]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routers.json[Routers]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/firewalls.json[Firewalls]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/destinations.json[Destinations]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles/ Ports]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets]
 
