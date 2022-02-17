@@ -47,7 +47,7 @@ Compartments reflect administrator domains in OCI and enable the separation of d
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routing Destinations]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/firewalls.json[Firewalls]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/destinations.json[Zones]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles/ Ports]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets]
 
 ==== Phase 3
