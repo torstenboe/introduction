@@ -40,16 +40,16 @@ Compartments reflect administrator domains in OCI and enable the separation of d
 * Administrator Domains
 * Network Segments
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels]
-* Operator Controls
-* Roles
-* Policies for privilged users
-* Resource Tags
-* Routing Destinations
-* Routes
-* Routers
-* Firewalls
-* Application Profiles/ Ports
-* Subnmets
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/policies.json[Policies for privilged users]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/desitnations.json[Routing Destinations]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/routes.json[Routes]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/routers.json[Routers]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/firewalls.json[Firewalls]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/ports.json[Application Profiles/ Ports]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/subnets.json[Subnmets]
 
 ==== Phase 3
 * Service Attachments - The Oracle Service Network offers a variety of public cloud services that can be attached to a private service through a service gateway.
