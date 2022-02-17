@@ -42,7 +42,6 @@ Compartments reflect administrator domains in OCI and enable the separation of d
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/policies.json[Policies for privilged users]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/desitnations.json[Routing Destinations]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/routes.json[Routes]
