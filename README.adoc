@@ -14,7 +14,7 @@ With an OCI tenancy operators gain access to a scalable infrastructure pool. A s
 
 [#img-architecture] 
 .Delivery Framework 
-image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_ramework.drawio.png[Delivery Framework]
+image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.drawio.png[Delivery Framework]
 
 === Recommendations
 
