@@ -32,9 +32,9 @@ link:assets/network[Network] defines the compartment and role for network admini
 image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.drawio.png[Delivery Framework]
 
 ==== Incremental steps
-- Phase 1: Default Setting 
-- phase 2: Configuration Parameters
-- Phase 3: Extending the Framework
+- Phase 1: Discover: Initial deployment with default settings 
+- phase 2: Evolve: Refine configuration parameter together with subject matter experts
+- Phase 3: Publish: Capture the target configuration and add scripts for application layer configurations to define service assets
 
 
 === Considerations
