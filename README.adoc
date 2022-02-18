@@ -52,7 +52,7 @@ Service configuration parameters have been separated from the infrastructure cod
 
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains] : An administrator domain is an area of expertise, representing a group of administrators. Each domain manages administrator priviledges and policies independently. Names must be unique for a service resident.
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles] : A role is a set of responsibilities, activities and authorities granted to a person or team. A role is defined in a process or function. One person or team may have multiple roles. For example, the roles of incident manager and problem manager may be carried out by a single person.
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles] : Accountable to the organization for stewardship of service assets of the resident.
 
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags]
