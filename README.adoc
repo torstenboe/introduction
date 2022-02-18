@@ -54,16 +54,25 @@ Service configuration parameters have been separated from the infrastructure cod
 
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles] : Accountable to the organization for stewardship of service assets of the resident.
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/segments.json[Network Segments]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routers.json[Routers]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routing Destinations]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/firewalls.json[Firewalls]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/destinations.json[Zones]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls] : Operations Control aims to monitor and control the IT services and their underlying infrastructure. 
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags] : Resource tags are used to identify a group of associated resources
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels] : Alert messaging (or alert notification) is machine-to-person communication that is important or time sensitive
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/segments.json[Network Segments] : Segmentation divides a computer network into smaller parts. The purpose is to improve network performance and security. 
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets] : A subnetwork or subnet is a logical subdivision of an IP network
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routers.json[Edge Router] : An edge router is a specialized router located at a network boundary that enables an internal network to connect to external networks. They are primarily used at two demarcation points: the wide area network (WAN) and the internet
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routing Destinations] : Routing is the process of selecting a path for traffic in a network or between or across. A route is defined as a pairing between a destination and the attributes
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/firewalls.json[Firewalls] : Allowing or blocking network packets into or out of a device or the network based on their application (port number)
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/destinations.json[Zones] : A security zone is a portion of a network that has specific security requirements set. Each zone consists of a single interface or a group of interfaces, to which a security policy is applied. ... In a very broad sense, a firewall is used to monitor traffic destined to and originating from a network
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles] : Application Port Profiles include a combination of a protocol and a port, or a group of ports, that is used for Firewall and NAT services on the Edge Gateway.
 
 ==== Extending the Framework
 Compartments reflect administrator domains in OCI and enable the separation of duties. The domain component adds a typical set of infrastructure resources, policies, guidelines and management services to each compartment. Domains can be customized in the link:https://www.terraform.io/docs/language/modules/syntax.html[module block] of the respective administrator template. 
