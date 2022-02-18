@@ -48,18 +48,18 @@ image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.
 * Domain Protection
 
 ==== Configuration Parameters
-* Administrator Domains
-* Network Segments
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/segments.json[Network Segments]
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routers.json[Routers]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routing Destinations]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/firewalls.json[Firewalls]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/destinations.json[Zones]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles]
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets]
 
 ==== Extending the Framework
 Compartments reflect administrator domains in OCI and enable the separation of duties. The domain component adds a typical set of infrastructure resources, policies, guidelines and management services to each compartment. Domains can be customized in the link:https://www.terraform.io/docs/language/modules/syntax.html[module block] of the respective administrator template. 
