@@ -49,6 +49,7 @@ image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.
 
 ==== Configuration Parameters
 Service configuration parameters have been separated from the infrastructure code and allow for changes in design, scale and scope of a service. This enables operations engineers to collect input from practitioners in areas such as managing the availability of services, controlling demand, optimizing capacity utilization, scheduling of operations and fixing problems. Practioners guide operations engineers through new models and architectures such as shared services, utility computing, web services and mobile commerce.
+
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles]
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls]
