@@ -19,7 +19,7 @@ link:assets/resident[Resident] is the compartment block combined with groups and
 
 [#img-architecture] 
 .Baseline Configuration 
-image::https://raw.githubusercontent.com/ocilabs/images/main/service_resident.drawio.png[Baseline Configuration]
+image::https://raw.githubusercontent.com/ocilabs/images/main/base_config.drawio.png[Baseline Configuration]
 
 ==== Network Topology
 link:assets/network[Network] defines the compartment and role for network administrators together with a Virtual Cloud Network (VCN) incl. Dynamic Routing Gateway and gateways for NAT, Internet and Oracle Services
@@ -29,7 +29,7 @@ link:assets/network[Network] defines the compartment and role for network admini
 
 [#img-architecture] 
 .Code Delivery
-image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.drawio.png[Code Delivery]
+image::https://raw.githubusercontent.com/ocilabs/images/main/code_delivery.drawio.png[Code Delivery]
 
 ==== Incremental steps
 - Phase 1: Discover: Initial deployment with default settings 
