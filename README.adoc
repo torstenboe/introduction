@@ -28,8 +28,8 @@ link:assets/network[Network] defines the compartment and role for network admini
 === Recommendations
 
 [#img-architecture] 
-.Delivery Framework 
-image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.drawio.png[Delivery Framework]
+.Code Delivery
+image::https://raw.githubusercontent.com/ocilabs/images/main/delivery_framework.drawio.png[Code Delivery]
 
 ==== Incremental steps
 - Phase 1: Discover: Initial deployment with default settings 
