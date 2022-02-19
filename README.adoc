@@ -20,7 +20,7 @@ In the default configuration link:assets/network[network segmentation] is employ
 
 
 === Recommendations
-The code extracts configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration to address individual needs. Relying on a state-aware provisioning process allows to adopt an iterative approach and apply the SCRUM method to develop infrastructure templates. Connecting the Resource Manager (ORM) with a git source allows to employ engineering teams that inherit the expertise of administrators who are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory adn can be edited without touching the deployment templates.
+The code extracts configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration to address individual needs. Relying on a state-aware provisioning process allows adopting an iterative approach and apply the SCRUM method to develop infrastructure templates. Connecting the Resource Manager (ORM) with a git source allows to employ engineering teams that inherit the expertise of administrators who are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory adn can be edited without touching the deployment templates.
 
 [#img-architecture] 
 .Code Delivery
