@@ -26,7 +26,6 @@ The code extracts configuration parameter from the deployment code. This enables
 .Code Delivery
 image::https://raw.githubusercontent.com/ocilabs/images/main/code_delivery.drawio.png[Code Delivery]
 
-==== Incremental steps
 The framework enables a process that splits the design of a cloud services into three phases:
 
 - *Discover*: Initial deployment with default settings offers a bare minimum of configuration options and deploys a foundation that allows to evaluate the various configuration options, OCI has to offer. For some uses cases that might even be sufficient. However, it enables operation engineers to introduce OCI to system administrators and service owners, without touching the infrastructure code. 
