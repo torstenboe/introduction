@@ -18,8 +18,8 @@ Separation of Concerns
 link:assets/resident[Resident] is the compartment block combined with groups and policies that define a working environment for cloud and security operators
 
 [#img-architecture] 
-.Service Resident 
-image::https://raw.githubusercontent.com/ocilabs/images/main/service_resident.drawio.png[Service Resident]
+.Baseline Configuration 
+image::https://raw.githubusercontent.com/ocilabs/images/main/service_resident.drawio.png[Baseline Configuration]
 
 ==== Network Topology
 link:assets/network[Network] defines the compartment and role for network administrators together with a Virtual Cloud Network (VCN) incl. Dynamic Routing Gateway and gateways for NAT, Internet and Oracle Services
