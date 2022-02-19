@@ -16,7 +16,7 @@ The default configuration defines a foundation for a service resident for a tena
 .Baseline Configuration 
 image::https://raw.githubusercontent.com/ocilabs/images/main/base_config.drawio.png[Baseline Configuration]
 
-In the default configuration link:assets/network[network segmentation] is employed, but only one segement, the "core" network is  defined. Every segement can be  separated into subnets, using link:https://www.terraform.io/language/functions/cidrsubnet[Terraform's cidrsubnet() function]. A segment represents a Virtual Cloud Network (VCN) incl. a dynamic routing gateway and gateways for the Oracle Service Network, Internet and NAT zones. Per default one, obligatory "core" router is defined, gateways are optional. Additional router can be configured when adding network segments.  
+In the default configuration link:assets/network[network segmentation] is employed, but only one segement, the "core" network is  defined. Every segement can be  separated into subnets, using link:https://www.terraform.io/language/functions/cidrsubnet[Terraform's cidrsubnet() function]. A segment represents a Virtual Cloud Network (VCN) incl. a dynamic routing gateway and gateways for the Oracle Service Network, Internet and NAT zones. Firewalls are port filter on subnet level and refer to a security list. Per default egress traffic is not not constrained, ingress traffic limited to a minimum set of of ports. Also, one, obligatory "core" router is defined, while gateways remain optional. Additional router can be configured when adding network segments to the topology.  
 
 
 === Recommendations
@@ -27,9 +27,10 @@ The code extracts configuration parameter from the deployment code. This enables
 image::https://raw.githubusercontent.com/ocilabs/images/main/code_delivery.drawio.png[Code Delivery]
 
 ==== Incremental steps
-- Phase 1: Discover: Initial deployment with default settings 
-- phase 2: Evolve: Refine configuration parameter together with subject matter experts
-- Phase 3: Publish: Capture the target configuration and add scripts for application layer configurations to define service assets
+The framework enables a process that splits the definition of an infrastructure platform into three phases:
+- *Discover*: Initial deployment with default settings offers a bare minimum of configuration options and deploys a foundation that allows to evaluate the various configuration options, OCI has to offer. For some uses cases that might even be sufficient. However, it enables operation engineers to introduce OCI to system administrators and service owners, without touching the infrastructure code. 
+- *Evolve*: Refine configuration parameter together with subject matter experts. All configuration parameters are separated into JSON file. This collection delivers for an adoption process that incorporates subject matter experts like network and security operators into a cloud adoption project without teaching infrastructure coding. 
+- *Define*: The last step is service definition, after refining the topology, services can be deployed, either by attaching services from the Oracle Service Network, deploying predefined or developing new service modules.
 
 
 === Considerations
