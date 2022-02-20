@@ -28,9 +28,9 @@ image::https://raw.githubusercontent.com/ocilabs/images/main/code_delivery.drawi
 
 The framework enables operators to divide the build process of a cloud solution into three work streams that can run in parallel:
 
-- *Service Discovery*: Initial deployment with default settings offers a bare minimum of configuration options and deploys a foundation that allows to evaluate the various configuration options, OCI has to offer. For some uses cases that might even be sufficient. However, it enables engineers to introduce OCI to system administrators and service owners and discover services that help to bootstrap service operation tasks. 
-- *Architecture Refinement*: All configuration parameters are separated into JSON file, what allows subject matter experts refine configuration parameter network segments and administrator policies. 
-- *Solution Composition*: The last step is service definition, after refining the topology, services can be deployed, either by attaching services from the Oracle Service Network, deploying predefined or developing new service modules.
+- *Cloud Discovery*: Initial deployment with default settings offers a bare minimum of configuration options and deploys a foundation that allows to evaluate the various configuration options, OCI has to offer. For some uses cases that might even be sufficient. However, it enables engineers to introduce OCI to system administrators and service owners and discover services that help to bootstrap service operation tasks. 
+- *Configuration Refinement*: All configuration parameters are separated into JSON file, what allows subject matter experts refine configuration parameter network segments and administrator policies. 
+- *Service Composition*: The objective of a project is usually the definition of a service. Beside refining the topology, servers need to be configured and application installed. Bash scripts can be added to a host configuration or predefined services can be attached to a resident. An attachement module allows to attaching services from the Oracle Service Network, building individual services requires service modules that are either provieded as blueprints or can be defined by operations engineers.
 
 
 === Considerations
