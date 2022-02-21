@@ -34,7 +34,7 @@ The framework aims to provide more flexibility for infrastructure operators. The
 
 
 === Considerations
-The service configuration module is the first out of three obligaotry modules that build a landing zone for new services in OCI. Configuration parameter for operator controls have been separated from the deployment code to enable operators to benefit from automation scripts and runbook modules already before becoming an OCI expert. The link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[resource manager (ORM)] is used  to expose assets through proteced user- and application interfaces, keeping service owners in charge to determine when and where a service will be launched. 
+The service configuration module is the first out of three obligatory modules that build a landing zone for new services in OCI. Configuration parameter for operator controls have been separated from the deployment code to enable operators to benefit from automation scripts and runbook modules already before becoming an OCI expert. The link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[resource manager (ORM)] is used  to expose assets through proteced user- and application interfaces, keeping service owners in charge to determine when and where a service will be launched. 
 
 * *Tenancy Classification*:
 
