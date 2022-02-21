@@ -34,7 +34,7 @@ Separating service configuration and service assets suggests a cloud adopption p
 
 
 === Considerations
-*Service Assets* abstract provider specific APIs and contain code that can refer to multiple resource provider in order to merge resources from multiple provider into logical, customer specific resource interfaces. The resources manager comes with a number of link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/providers.htm[service provider] preinstalled, additional can be pulled form the link:https://registry.terraform.io/browse/providers[Terraform registry], using the link:https://www.terraform.io/docs/language/providers/configuration.html[provider block]. Components reflect best practices, collected throughout numerous projects and remain subject to change. Initially we provide the following modules:
+
 
 
 ==== Discover cloud capabilities and for specific use cases
@@ -51,7 +51,7 @@ Separating service configuration and service assets suggests a cloud adopption p
 ==== Refine settings into company specifc service assets
 Service configuration parameters have been separated from the infrastructure code and allow for changes in design, scale and scope of a service. This enables operations engineers to collect input from practitioners in areas such as managing the availability of services, controlling demand, optimizing capacity utilization, scheduling of operations and fixing problems. Practioners guide operations engineers through new models and architectures such as shared services, utility computing, web services and mobile commerce.
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains] : An administrator domain is an area of expertise, representing a group of administrators. Each domain manages administrator priviledges and policies independently. Names must be unique for a service resident.
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains] : An administrator domain is an area of expertise, representing a group of administrators. Each domain manages administrator priviledges and policies independently. Names must be unique for a service resident. Compartments reflect administrator domains in OCI and enable the separation of duties. The domain component adds a typical set of infrastructure resources, policies, guidelines and management services to each compartment. Domains can be customized in the link:https://www.terraform.io/docs/language/modules/syntax.html[module block] of the respective administrator template. 
 
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles] : Accountable to the organization for stewardship of service assets of the resident.
 
@@ -76,7 +76,7 @@ Service configuration parameters have been separated from the infrastructure cod
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles] : Application Port Profiles include a combination of a protocol and a port, or a group of ports, that is used for Firewall and NAT services on the Edge Gateway.
 
 ==== Compose cloud solutions with service assets
-Compartments reflect administrator domains in OCI and enable the separation of duties. The domain component adds a typical set of infrastructure resources, policies, guidelines and management services to each compartment. Domains can be customized in the link:https://www.terraform.io/docs/language/modules/syntax.html[module block] of the respective administrator template. 
+*Service Assets* abstract provider specific APIs and contain code that can refer to multiple resource provider in order to merge resources from multiple provider into logical, customer specific resource interfaces. The resources manager comes with a number of link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/providers.htm[service provider] preinstalled, additional can be pulled form the link:https://registry.terraform.io/browse/providers[Terraform registry], using the link:https://www.terraform.io/docs/language/providers/configuration.html[provider block]. Components reflect best practices, collected throughout numerous projects and remain subject to change. Initially we provide the following modules:
 
 * Service Attachments - The Oracle Service Network offers a variety of public cloud services that can be attached to a private service through a service gateway.
 * Service Assets - Terraform modules represent service assets. Predefined modules can be invoked referring to OCI modules in the link:https://registry.terraform.io/browse/modules?provider=oci[terraform registry] or to a git repository, containing infrastructure code. A great starting point with limited coding requirements are the link:https://registry.terraform.io/search/modules?q=oci%20cloud%20bricks[cloudbricks] components. 
