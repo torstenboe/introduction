@@ -21,7 +21,7 @@ A network segment represents a Virtual Cloud Network (VCN) incl. a dynamic routi
 
 === Recommendations
 Provisioning templates extract configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration in incremental steps. The state-aware provisioning process suggests an iterative approach, applying the SCRUM method. A team is made up of system administrator with expertise in application management, network-, database- and security operations. Storing the code in a git repository and connecting the Resource Manager (ORM) with the code source allows administrators to customize a configuration, even when they are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory and can be edited without touching the deployment templates.
-
+ini
 [#img-architecture] 
 .Code Delivery
 image::https://raw.githubusercontent.com/ocilabs/images/main/code_delivery.drawio.png[Code Delivery]
@@ -29,7 +29,7 @@ image::https://raw.githubusercontent.com/ocilabs/images/main/code_delivery.drawi
 The framework enables operators to divide the build process of a cloud solution into three work streams that can run in parallel:
 
 - *Cloud Discovery*: Initial deployment with default settings offers a bare minimum of configuration options and deploys a foundation that allows to evaluate the various configuration options, OCI has to offer. For some uses cases that might even be sufficient. However, it enables engineers to introduce OCI to system administrators and service owners and discover services that help to bootstrap service operation tasks. 
-- *Configuration Refinement*: All configuration parameters are separated into JSON file, what allows subject matter experts refine configuration parameter network segments and administrator policies. 
+- *Configuration Refinement*: Configuration parameters are stoed as lists of objects in JSON format. Dependencies are modelled using names. Subject matter experts refine parameter by either add, change or delete objects. The number of arguments has been bootstrapped from the original resource descriptions. Combining mulitple resources into assets allows reduce the arguments significantly and use a terminology that system administrators are used too.
 - *Service Composition*: The objective of a project is usually the definition of a service. Beside refining the topology, servers need to be configured and application installed. Bash scripts can be added to a host configuration or predefined services can be attached to a resident. An attachement module allows to attaching services from the Oracle Service Network, building individual services requires service modules that are either provieded as blueprints or can be defined by operations engineers.
 
 
