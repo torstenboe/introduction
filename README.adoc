@@ -20,8 +20,7 @@ A network segment represents a Virtual Cloud Network (VCN) incl. a dynamic routi
 
 
 === Recommendations
-Executing the default deployment plan, the resource manager offers a choice of topologies that enable common use cases like enterprise applications, big-data and cloud-native services. These options can also be combined to build hybrid services. Therefore all topology options are combined in a link:assets/network[network segmentat], the "core" network. 
-The code extracts configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration to address individual needs. The state-aware provisioning process suggests an iterative approach, applying the SCRUM method to develop infrastructure templates. Connecting the Resource Manager (ORM) with a git source allows to employ engineering teams that reflect the expertise of administrators, even when they are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory and can be edited without touching the deployment templates.
+Provisioning templates extract configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration in incremental steps. The state-aware provisioning process suggests an iterative approach, applying the SCRUM method. A team of experts is made up of subject matter experts with expertise in the domain areas. Connecting the Resource Manager (ORM) with a git source allows to employ engineering teams that reflect the expertise of administrators, even when they are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory and can be edited without touching the deployment templates.
 
 [#img-architecture] 
 .Code Delivery
@@ -39,10 +38,15 @@ The framework enables operators to divide the build process of a cloud solution 
 
 
 ==== Discover cloud capabilities and for specific use cases
-* Tenancy Classification
-* Resident Configuration
-* Network Settings
-* Domain Protection
+* *Tenancy Classification*:
+
+* *Resident Configuration*:
+
+* *Topology Options*: Executing the default deployment plan, the resource manager offers a choice of topologies that enable common use cases like enterprise applications, big-data and cloud-native services. These options can also be combined to build hybrid services. Therefore all topology options are combined in a link:assets/network[network segmentat], the "core" network. 
+
+* *Network Settings*:
+
+* *Domain Protection*:
 
 ==== Refine settings into company specifc service assets
 Service configuration parameters have been separated from the infrastructure code and allow for changes in design, scale and scope of a service. This enables operations engineers to collect input from practitioners in areas such as managing the availability of services, controlling demand, optimizing capacity utilization, scheduling of operations and fixing problems. Practioners guide operations engineers through new models and architectures such as shared services, utility computing, web services and mobile commerce.
