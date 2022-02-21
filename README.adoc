@@ -20,7 +20,7 @@ A network segment represents a Virtual Cloud Network (VCN) incl. a dynamic routi
 
 
 === Recommendations
-Provisioning templates extract configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration in incremental steps. The state-aware provisioning process suggests an iterative approach, applying the SCRUM method. A team of experts is made up of subject matter experts with expertise in the domain areas. Connecting the Resource Manager (ORM) with a git source allows to employ engineering teams that reflect the expertise of administrators, even when they are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory and can be edited without touching the deployment templates.
+Provisioning templates extract configuration parameter from the deployment code. This enables operators to start with a recommendet set of resources and refine the configuration in incremental steps. The state-aware provisioning process suggests an iterative approach, applying the SCRUM method. A team is made up of system administrator with expertise in application management, network-, database- and security operations. Storing the code in a git repository and connecting the Resource Manager (ORM) with the code source allows administrators to customize a configuration, even when they are not familar with HCL or Terraform. Network and security settings are captured in JSON files, stored in an own directory and can be edited without touching the deployment templates.
 
 [#img-architecture] 
 .Code Delivery
