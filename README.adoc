@@ -34,17 +34,17 @@ The framework aims to provide more flexibility for infrastructure operators. The
 
 
 === Considerations
-The service configuration module is the first out of three obligatory modules that build a landing zone for new services in OCI. Configuration parameter for operator controls have been separated from the deployment code to enable operators to benefit from automation scripts and runbook modules already before becoming an OCI expert. The link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[resource manager (ORM)] is used  to expose assets through proteced user- and application interfaces, keeping service owners in charge to determine when and where a service will be launched. 
+The service configuration module is the first out of three obligatory modules that build a landing zone for new services in OCI. The link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[resource manager (ORM)] is used to expose assets through proteced user- and application interfaces, keeping service owners in charge to determine when and where a service will be launched. The default schema offers a couple of options for a landing zone deployment.
 
-* *Tenancy Classification*:
+* *Tenancy Classification*: The class parameter helps to constraint resource deployments according to the service limits associated with contract for a tenancy. 
 
-* *Resident Configuration*:
+* *Resident Configuration*: In the second section meta data assciated with a resident is collected. Names should be unique for a tenancy to avoid conflicts for resources, defined on root level. The lifecycle stage helps engineers to avoid over provisioning of resources that take a long time to be destroyed.
 
-* *Topology Options*: Executing the default deployment plan, the resource manager offers a choice of topologies that enable common use cases like enterprise applications, big-data and cloud-native services. These options can also be combined to build hybrid services. Therefore all topology options are combined in a link:assets/network[network segmentat], the "core" network. 
+* *Topology Options*: Executing the default deployment plan, the resource manager offers a choice of topologies that enable common use cases like enterprise applications, big-data and cloud-native services. These options can also be combined to build hybrid services. The opology selection triggers the subnet topology for a segment.
 
-* *Network Settings*:
+* *Network Settings*: Generic network parameter trigger the level of exposure to the public internet. Activating the internet gateway will expose a frontend, and/or load balancer network to the public internet.   
 
-* *Domain Protection*:
+* *Domain Protection*: The default protection setting is triggered by the lifecycle setting, however can be changed should that be required.
 
 ==== Refine settings into company specifc service assets
 Service configuration parameters have been separated from the infrastructure code and allow for changes in design, scale and scope of a service. This enables operations engineers to collect input from practitioners in areas such as managing the availability of services, controlling demand, optimizing capacity utilization, scheduling of operations and fixing problems. Practioners guide operations engineers through new models and architectures such as shared services, utility computing, web services and mobile commerce.
