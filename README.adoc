@@ -48,23 +48,24 @@ link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourc
 ==== Create company specifc service assets
 Service configuration represents a next level of customization. JSON files represent the design, scale and scope of a service. In the refinement phase teams collect input from practitioners to adjust the default parameter that allow operators to controll demand and optimize capacity utilization. 
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains] : An administrator domain is an area of expertise, representing a group of administrators. Each domain manages administrator priviledges and policies independently. Names must be unique for a service resident. Compartments reflect administrator domains in OCI and enable the separation of duties. The domain component adds a typical set of infrastructure resources, policies, guidelines and management services to each compartment. Domains can be customized in the link:https://www.terraform.io/docs/language/modules/syntax.html[module block] of the respective administrator template. 
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/domains.json[Administrator Domains] : An administrator domain is an area of expertise, representing a group of administrators. Each domain manages administrator priviledges and policies independently. Names must be unique for a service resident. 
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles] : Accountable to the organization for stewardship of service assets of the resident.
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/roles.json[Administrator Roles] : Administrator are accountable to the organization for stewardship of service component like network, storage or compute.
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls] : Operations Control aims to monitor and control the IT services and their underlying infrastructure. 
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/controls.json[Operator Controls] : Control enable operators to constrain resource access and retrieve alarms and notifications in case of an event. 
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags] : Resource tags are used to identify a group of associated resources
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/tags.json[Resource Tags] : Resource tags are used to identify a group of resources, track costs and define policies.
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels] : Alert messaging (or alert notification) is machine-to-person communication that is important or time sensitive
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/resident/channels.json[Notification Channels] : Notification represent machine-to-person communication that is important or time sensitive. Channels allow to define how the respective messages will be send.
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/segments.json[Network Segments] : Segmentation divides a computer network into smaller parts. The purpose is to improve network performance and security. 
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/segments.json[Network Segments] :  Segments provide customizable and private IP networks in OCI 
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnmets] : A subnetwork or subnet is a logical subdivision of an IP network
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/subnets.json[Subnets] : Subnets divide segments into smaller parts. The purpose is to improve security and avoid IP address conflicts, deploying autmated workloads. 
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routers.json[Edge Router] : An edge router is a specialized router located at a network boundary that enables an internal network to connect to external networks. They are primarily used at two demarcation points: the wide area network (WAN) and the internet
 
-* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routing Destinations] : Routing is the process of selecting a path for traffic in a network or between or across. A route is defined as a pairing between a destination and the attributes
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routers.json[Edge Router] : An edge router is a specialized router located at the cloud network boundary. It represents a DRG and connects internal networks with a segment. 
+
+* link:https://github.com/ocilabs/default-configuration/blob/main/default/network/routes.json[Routing Destinations] : Routing is the process of selecting a path for traffic across network security zones. A route is defined as a pairing between a destination and and a gateway.
 
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/firewalls.json[Firewalls] : Allowing or blocking network packets into or out of a device or the network based on their application (port number)
 
