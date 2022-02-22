@@ -33,7 +33,7 @@ The framework aims to provide more flexibility for infrastructure operators. Sto
 
 
 === Considerations
-The link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[resource manager (ORM)] is used to expose assets through proteced user- and application interfaces, keeping service owners in charge to determine when and where a service will be launched. A schema file extends the console and facilitates variable entries in the `Create Stack` page. The default schema offers the following of options:
+The link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[resource manager (ORM)] exposes assets through proteced user- and application interfaces, keeping service owners in charge to determine when and where a service will be launched. A schema file extends the console and facilitates variable entries in the `Create Stack` page. The default schema offers the following of options:
 
 * *Tenancy Classification*: The class parameter helps to constraint resource deployments according to the service limits associated with contract for a tenancy. 
 
