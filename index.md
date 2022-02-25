@@ -2,12 +2,9 @@
 
 In recent years cloud has become a very popular and evolved into an alternative to traditional data center. An increasing number of enterprises outsource their infrastructure to a cloud provider. Adopting a service delivery framework on top of a cloud controller helps IT departments to keppt their services aligned with the needs of the business. Usually, business value is measured in reduced cost, decreased time-to-market or increased revenue. Cloud infrastructure platforms increase operational efficiency, expedite the development of new services and prevents  investment risks. Global infrastructure pools provide access to resources on-deamnd. But while launching a cloud server has become a matter of pressing a button, building a hosting platform for intra- and extranet services remains challenging. Operators need to comply with security and compliance guidelines before provisioning the first server. This framework accelerates this process. Operators start with default configuration and refine their platform in small incremental steps. ["Infrastructure as Code" (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code) is employed to extract configuration parameters from service assets and to inherit operator controls during the provisioning process. [Oracle's Resource Manager (ORM)](https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm) is used to generate graphical user interfaces and REST-API from code variables. This enables operations engineers to build templates that trigger provisioning processes with a service deployment. Service manager benefit from on-demand infrastructure, service operators keep control and effectuate security and comliance guidlines. 
 
-### Markdown
+### Architecture
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
+The ocloud framework supports the adoption of link:https://www.oracle.com/cloud/[Oracle Cloud Infrastructure (OCI)] with a baseline configuration for service deployments. Rather than separating service design and infrastructure automation, service configurations include provisioning instructions for service assets. The framework defines a link:assets/resident[service resident] isolating service assets in a network segment and creates administrator domains to reflect operational responsibilities. An administrator domain combines OCI resources like compartments, groups, policies, identity tags and notifications into a reusable asset that separates system operators from network-, database-, and security operators.
 
 # Header 1
 ## Header 2
