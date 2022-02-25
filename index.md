@@ -1,8 +1,6 @@
-## Welcome to GitHub Pages
+## ocloud Framework
 
-You can use the [editor on GitHub](https://github.com/ocilabs/introduction/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+In recent years cloud has become a very popular and evolved into an alternative to traditional data center. An increasing number of enterprises outsource their infrastructure to a cloud provider. Adopting a service delivery framework on top of a cloud controller helps IT departments to keppt their services aligned with the needs of the business. Usually, business value is measured in reduced cost, decreased time-to-market or increased revenue. Cloud infrastructure platforms increase operational efficiency, expedite the development of new services and prevents  investment risks. Global infrastructure pools provide access to resources on-deamnd. But while launching a cloud server has become a matter of pressing a button, building a hosting platform for intra- and extranet services remains challenging. Operators need to comply with security and compliance guidelines before provisioning the first server. This framework accelerates this process. Operators start with default configuration and refine their platform in small incremental steps. ["Infrastructure as Code" (IaC)](https://en.wikipedia.org/wiki/Infrastructure_as_code) is employed to extract configuration parameters from service assets and to inherit operator controls during the provisioning process. [Oracle's Resource Manager (ORM)](https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm) is used to generate graphical user interfaces and REST-API from code variables. This enables operations engineers to build templates that trigger provisioning processes with a service deployment. Service manager benefit from on-demand infrastructure, service operators keep control and effectuate security and comliance guidlines. 
 
 ### Markdown
 
