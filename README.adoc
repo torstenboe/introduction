@@ -72,7 +72,7 @@ Service configuration represents a next level of customization. JSON files repre
 * link:https://github.com/ocilabs/default-configuration/blob/main/default/network/ports.json[Application Profiles] : Application Port Profiles include a combination of a protocol and a port, or a group of ports, that is used for firewalls and NAT gateways.
 
 ==== Compose cloud solutions with service assets
-Cloud solutions are assembled using service assets. The framework provides predefined components that abstract provider specific APIs. Automation code for service deployments complete the servicve configuration. Predefined modules can be invoked referring to OCI modules in the link:https://registry.terraform.io/browse/modules?provider=oci[terraform registry] or to a git repository, containing infrastructure code. A great starting point are the link:https://registry.terraform.io/search/modules?q=oci%20cloud%20bricks[cloudbricks] components. Depending on the level of standardization, service components are introduced using the following methods:
+Cloud solutions are assembled using service assets. The framework provides predefined components that abstract provider specific APIs. Automation code for service deployments complete the servicve configuration. Predefined modules can be invoked referring to OCI modules in the [terraform registry](https://registry.terraform.io/browse/modules?provider=oci) or to a git repository, containing infrastructure code. A great starting point are the [cloudbricks](https://registry.terraform.io/search/modules?q=oci%20cloud%20bricks) components. Depending on the level of standardization, service components are introduced using the following methods:
 
 * *Platform Assets* - Platform assets are defined as Terraform modules. Platform assets complement the initial set of resources, examples are hypervisors, container orchstrator or network appliances. Ideally, third party assets can be invoked using an own link:https://registry.terraform.io/browse/providers[Terraform provider]. 
 * *Service Attachments* - The Oracle Service Network offers a variety of public cloud services that can be attached to a private service through the service gateway. Attachments don't need customization, resource blocks can be added to the main.tf file.
@@ -81,27 +81,25 @@ Cloud solutions are assembled using service assets. The framework provides prede
 === Deployment
 The resources manager comes with a number of link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/providers.htm[service provider] preinstalled, additional can be pulled form the link:https://registry.terraform.io/browse/providers[Terraform registry], using the link:https://www.terraform.io/docs/language/providers/configuration.html[provider block]. The configuration module is the first out of three obligatory modules. It translates generic input paramerts into a baseline configuration. Operators adjust the service configuration when requirements evolve. For one-time deployments, the link:https://cloud.oracle.com/resourcemanager/stacks/create?zipUrl=https://github.com/oracle-devrel/terraform-oci-ocloud-landing-zone/archive/refs/heads/main.zip[Deploy to the Oracle Cloud] button creates a zip archive that is pushed to the resource manager directly, to enable continuous changes the code should be cloned into a private repository and be connected as a source provider.
 
-[#img-configuration] 
-.Service Configuration 
-image::https://raw.githubusercontent.com/ocilabs/images/main/service_configuration.drawio.png[Service Configuration]
+![Service Configuration](https://raw.githubusercontent.com/ocilabs/images/main/service_configuration.drawio.png)
 
-An optional operator node is employed to execute cron jobs and runbooks that help to manage service availability, schedule resource consumption and fix problems for container workloads and functions. In addition service configurations enable service manager to adopt Oracle Cloud Services as alternative to shared intranet services and to benefit from link:https://github.com/oracle-quickstart[blueprints] for services like utility computing, web- and mobile backbone services. 
+An optional operator node is employed to execute cron jobs and runbooks that help to manage service availability, schedule resource consumption and fix problems for container workloads and functions. In addition service configurations enable service manager to adopt Oracle Cloud Services as alternative to shared intranet services and to benefit from [blueprints](https://github.com/oracle-quickstart) for services like utility computing, web- and mobile backbone services. 
 
 ==== Prerequisites
 Code is written in HashiCorp Configuration Language (HCL), includes data stored in JSON format and cloud init scripts. The OCI Resource Manager executes Terraform and deploys Service Assets into a tenancy. Engineers should familerize themselfes with the following topics:
 
-* link:https://www.oracle.com/cloud/free/[Oracle Cloud Infrastructure (OCI) Account] 
-* link:https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm[Oracle Resource Manager]
-* link:https://www.terraform.io[HashiCorp Terraform]
-* link:https://registry.terraform.io/providers/hashicorp/oci/latest[Terraform Service Provider for OCI]
-* link:https://registry.terraform.io/providers/hashicorp/time/latest[Terraform Time Service Provider]
-* link:https://cloudinit.readthedocs.io/en/latest/[Cloud Init]
+* [Oracle Cloud Infrastructure (OCI) Account](https://www.oracle.com/cloud/free)
+* [Oracle Resource Manager](https://docs.oracle.com/en-us/iaas/Content/ResourceManager/Concepts/resourcemanager.htm)
+* [HashiCorp Terraform](https://www.terraform.io)
+* [Terraform Service Provider for OCI](https://registry.terraform.io/providers/hashicorp/oci/latest)
+* [Terraform Time Service Provider](https://registry.terraform.io/providers/hashicorp/time/latest)
+* [Cloud Init](https://cloudinit.readthedocs.io/en/latest)
 
 === Notes/Issues
 * Destroying compartments and tag namespaces can take some time and will fail in some cases. Repeat the destroy command will continue the process.
 
 === URLs
-This repository is intended to be used with the Oracle Resource Manager. Using the "Deploy to Oracle Cloud" button requires users to link:https://www.oracle.com/cloud/sign-in.html[sign in].
+This repository is intended to be used with the Oracle Resource Manager. Using the "Deploy to Oracle Cloud" button requires users to [sign in](https://www.oracle.com/cloud/sign-in.html).
 
 === Contributing
 This project is a community project the code is open source.  Please submit your contributions by forking this repository and submitting a pull request!  Oracle appreciates any contributions that are made by the open source community.
