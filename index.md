@@ -8,6 +8,11 @@ The ocloud framework supports the adoption of link:https://www.oracle.com/cloud/
 
 ![Baseline Configuration](https://raw.githubusercontent.com/ocilabs/images/main/base_config.drawio.png)
 
+A segment represents various network ressources in OCI. It combines a Virtual Cloud Network (VCN) with a dynamic routing gateway (DRG), a service gateway for the Oracle Service Network, an internet- and a NAT gateway. It contains an adjustable number of subnets, defined using Terraform's  link:https://www.terraform.io/language/functions/cidrsubnet[cidrsubnet()] function and secures IP spaces through firewalls. A firewall represents port filter, implemented using security lists. In the default configuration egress traffic is unconstrained, ingress traffic is limited to a minimum set of application profiles and will need adjustments, launching a service. Routing destinations trigger the definition of route rules. The DRG is obligatory and proiveds on-prem connectivity as an edge router. Adding network segments, additional routers can be defined and associated with VCN, naming both equally. Internet and NAT gateways are activated per default, but can be deactivated in the resource manager interface. 
+
+### Recommendations
+Provisioning templates extract configuration parameter from the deployment code for service assets. This enables operators to start with a recommendet set of resources and refine the configuration in incremental steps. The state-aware provisioning suggests an iterative approach. A SCRUM team is made up of system administrators with expertise in application management, network-, database- and security operations. They can adjust settings without learning HCL or Terraform. Service configurations are captured in JSON files and can be edited without touching the deployment code.
+
 # Header 1
 ## Header 2
 ### Header 3
