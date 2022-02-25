@@ -6,7 +6,7 @@ In recent years cloud has become a very popular and evolved into an alternative 
 
 The ocloud framework supports the adoption of link:https://www.oracle.com/cloud/[Oracle Cloud Infrastructure (OCI)] with a baseline configuration for service deployments. Rather than separating service design and infrastructure automation, service configurations include provisioning instructions for service assets. The framework defines a link:assets/resident[service resident] isolating service assets in a network segment and creates administrator domains to reflect operational responsibilities. An administrator domain combines OCI resources like compartments, groups, policies, identity tags and notifications into a reusable asset that separates system operators from network-, database-, and security operators.
 
-[Baseline Configuration](https://raw.githubusercontent.com/ocilabs/images/main/base_config.drawio.png)
+![Baseline Configuration](https://raw.githubusercontent.com/ocilabs/images/main/base_config.drawio.png)
 
 # Header 1
 ## Header 2
