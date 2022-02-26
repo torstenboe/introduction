@@ -2,7 +2,9 @@
 
 ## Documentation
 * link:https://terraform-docs.io[terradoc]
+
 Create a asciidoc file for a module `readme.md created with https://terraform-docs.io/: terraform-docs asciidoc document --sort=false ./ > ./readme.adoc`
+
 Create a md file for a module `readme.md created with https://terraform-docs.io/: terraform-docs markdown --sort=false ./ > ./readme.md`
 
 * link:https://pandoc.org[pandoc]
