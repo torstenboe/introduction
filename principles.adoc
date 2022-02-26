@@ -1,6 +1,6 @@
 The continous architecture principles help cloud engineers to develop a secure , resilient infrastructure for cloud services that is operated efficiently. Working in the incremental and evolving way that supports Agile and DevOps methods improves the qulaity and reduces the cost of a service design.
 
-* *Architect products* suggests to evolve from designing cloud solutions to developing service assets. Architecting reusable assets is more efficient than designing blueprints for a specific solution and focusses teams on business value rather than applying generic cloud capabilites.
+* *Architect products* suggests to evolve from designing cloud solutions to developing service assets. Architecting reusable assets for a customer tenancy is more efficient than designing blueprints for a specific solution and focusses teams on business value rather than applying generic cloud capabilites.
 * *Focus on quality attributes, not on functional requirements* Quality attribute requirements drive the architecture.
 * *Delay design decisions until they are absolutely necessary* Design architectures based on facts, not on guesses. There is no point in designing and implementing capabilities that may never be used—it is a waste of time and resources.
 * *Architect for change* Leverage the “power of small.” Big, monolithic, tightly coupled components are hard to change. Instead, leverage small, loosely coupled software elements.
