@@ -4,7 +4,7 @@ Continous architecture principles help operation engineers to develop a secure, 
 
 * *Innovate without disruption* Operational models for IT departments have incorporate shared infrastructure services in some shape or form. Operational responsibilities for database or network infrastructure is reflected in a separation of duties. Cloud services are usually designed as blueprints that represent the entire footprint in a single automation script. Extracting configuration parameters from the deployment code, the framework provides an automated provisioning process that collects input from existing competence center.
 
-* *Build delivery platforms for services* The foundation of a service is assembled with reusable assets. This ensures compliance and security with a high level of flexibility. The build once, use often method is reflected in asset libraries that can be invoked in a modular fashion. 
+* *Build a delivery platform for services* The foundation of a service is assembled with reusable assets. This ensures compliance and security with a high level of flexibility. The build once, use often method is reflected in asset libraries that can be invoked in a modular fashion. 
 
 Designing a service, architects focus on system requirements, communication pattern and orchestration capabilities before considering functional requirements. This turns the usual design process upside down and requires to focus on a minimum set of attribtues first.
 
