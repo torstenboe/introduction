@@ -1,9 +1,10 @@
 The continous architecture principles help cloud engineers to develop a secure, resilient infrastructure for cloud services that is operated efficiently. Working in the incremental and evolving way that supports Agile and DevOps methods improves the quality of a service design.
 
-* *Design services, not solutions* A service delivers value to customers by facilitating a desired outcome without transfering the ownership for operational costs and risks.
+* *Design services, not solutions* A service delivers value to customers by facilitating a desired outcome without transfering the ownership for operational costs and risks. Functional component need to be considered in an operational context. Who is responsible to monitor and manage a particular asset. The perspective will change over time, therefore we start with dedicated infrastructure and attach PaaS and SaaS offerings, rather than depending an enterprise service on highly bastracted platform services already in the development phase.
 
 * *Focus on platform requirements* Designing a service, architects focus on system requirements, communication pattern and orchestration capabilities before considering functional requirements. This turns the usual design process upside down and requires to focus on a minimum set of attribtues first.
 * *Delay design decisions until they are absolutely necessary* Platforms evolve, there is no point in designing and implementing capabilities that may never be used—it is a waste of time and resources.
 * *Architect for change* Context will change. Leverage the “power of small.” Big, monolithic, tightly coupled components are hard to change. Instead, leverage small, loosely coupled software elements.
 * *PArchitect for build, test, deploy, and operate* Most architecture methodologies focus exclusively on software building activities, but we believe that architects should be concerned about testing, deployment, and operation, too, in order to support continuous delivery.
 * *Model the organization of your teams after the design of the system you are working on* The way teams are organized drives the architecture and design of the systems they are working on.
+* *Start Small* also from team size
